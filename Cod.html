@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="produto-relacionado">
+      <div class="underline"></div>
+      <h1>Produtos relacionados</h1>
+      <div class="underline2"></div>
+    </div>
+    <div class="submenu">
+      <ul>
+        <li><a href="#" class="celular">Celular</a></li>
+        <li><a href="#">Acessórios</a></li>
+        <li><a href="#">Tablets</a></li>
+        <li><a href="#">Notebooks</a></li>
+        <li><a href="#">TVs</a></li>
+        <li><a href="#">Outros</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="product">
+      <img src="https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png"
+        alt="iPhone 11 PRO MAX BRANCO 1">
+      <div class="produtos">
+        <h2>Iphone 11 PRO MAX BRANCO 1</h2>
+        <p class="preco-antigo"> R$22.500,00</p>
+        <p class="preco">R$ 15.000,00</p>
+        <p class="parcela"> ou 12x de R$ 1.250,00 sem juros </p>
+        <p class="frete"> Frete Grátis</p>
+        <button class="info-btn">Informações adicionais</button>
+        <p class="info-text" style="display:none;">Iphone 11 PRO MAX BRANCO 1 FAKE</p>
+        <button class="btns">Comprar</button>
+        <p class="informacaos" style="display:none">Produto adicionado ao carrinho!</p>
+      </div>
+    </section>
+
+    <section class="product">
+      <img src="https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png"
+        alt="IPHONE 13 MINI 1">
+      <div class="produtos">
+        <h2>IPHONE 13 MINI 1</h2>
+        <p class="preco-antigo"> R$11.700,00</p>
+        <p class="preco">R$ 9.000,00</p>
+        <p class="parcela"> ou 10x de R$900,00 sem juros </p>
+        <p class="frete"> Frete Grátis</p>
+        <button class="info-btn">Informações adicionais</button>
+        <p class="info-text" style="display:none;">IPHONE 13 MINI 1 FAKE</p>
+        <button class="btns">Comprar</button>
+        <p class="informacaos" style="display:none">Produto adicionado ao carrinho!</p>
+      </div>
+    </section>
+
+    <section class="product">
+      <img src="https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png"
+        alt="iPhone 11 PRO MAX BRANCO 2">
+      <div class="produtos">
+        <h2>Iphone 11 PRO MAX BRANCO 2</h2>
+        <p class="preco-antigo"> R$22.485,00</p>
+        <p class="preco">R$ 14.990,00</p>
+        <p class="parcela"> ou 12x de R$ 1.249,16 sem juros
+          <p />
+        <p class="frete"> Frete Grátis</p>
+        <button class="info-btn">Informações adicionais</button>
+        <p class="info-text" style="display:none;">Iphone 11 PRO MAX BRANCO 2 FAKE</p>
+        <button class="btns">Comprar</button>
+        <p class="informacaos" style="display:none">Produto adicionado ao carrinho!</p>
+      </div>
+    </section>
+
+    <section class="product">
+      <img src="https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png"
+        alt="IPHONE 13 MINI 2">
+      <div class="produtos">
+        <h2>IPHONE 13 MINI 2</h2>
+        <p class="preco-antigo"> R$15.600,00</p>
+        <p class="preco">R$ 12.000,00</p>
+        <p class="parcela"> ou 12x de R$ 1.000,00 sem juros </p>
+        <p class="frete"> Frete Grátis</p>
+        <button class="info-btn">Informações adicionais</button>
+        <p class="info-text" style="display:none;">IPHONE 13 MINI 2 FAKE</p>
+        <button class="btns">Comprar</button>
+        <p class="informacaos" style="display:none">Produto adicionado ao carrinho!</p>
+      </div>
+    </section>
+
+    <script>
+      const infoBtns = document.querySelectorAll('.info-btn');
+      infoBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const infoText = btn.nextElementSibling;
+          if (infoText.style.display === 'none') {
+            infoText.style.display = 'block';
+          } else {
+            infoText.style.display = 'none';
+          }
+        });
+      });
+    </script>
+
+    <script>
+      const buyBtns = document.querySelectorAll('.btns');
+      buyBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const infoText = btn.nextElementSibling;
+          if (infoText.style.display === 'none') {
+            infoText.style.display = 'block';
+          } else {
+            infoText.style.display = 'none';
+          }
+        });
+      });
+    </script>
+
+</body>
+
+</html>

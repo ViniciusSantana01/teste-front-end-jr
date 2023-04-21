@@ -1,0 +1,144 @@
+body {
+  background-color: #EBEBEB;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.produto-relacionado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produto-relacionado h1 {
+  position: absolute;
+  width: 350px;
+  height: 45px;
+  left: 545px;
+  top: 1px;
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #F71963;
+}
+
+.underline {
+  position: absolute;
+  width: 360px;
+  height: 0px;
+  left: 151px;
+  top: 45px;
+  border: 1px solid #DEDEDE;
+}
+
+.underline2 {
+  position: absolute;
+  width: 360px;
+  height: 0px;
+  left: 859px;
+  top: 45px;
+  border: 1px solid #DEDEDE;
+}
+
+.submenu {
+  position: absolute;
+  align-items: center;
+  margin-top: 150px;
+  left: 459px;
+
+}
+
+.submenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.submenu li {
+  margin: 0 10px;
+}
+
+.submenu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.submenu a:hover {
+  text-decoration: underline;
+}
+
+.submenu .celular {
+  color: #F71963;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 150px;
+}
+
+.produtos {
+  position: absolute;
+  margin-top: 10px;
+  font-family: Calibri;
+  font-style: normal;
+}
+
+.produtos h2 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.produtos .preco-antigo {
+  position: absolute;
+  left: 1%;
+  right: 30%;
+  font-size: 16px;
+  color: #888;
+  margin-top: 10px;
+  text-decoration-line: line-through;
+}
+
+.produtos .preco {
+  position: abosulute;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 25px;
+
+}
+
+.parcela {
+  position: abosulute;
+  height: 0px;
+  font-weight: 100;
+  font-size: 10px;
+}
+
+.frete {
+  position: abosulute;
+  margin-top: 5px;
+  font-family: Calibri;
+  font-style: normal;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #F71963;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #BCBCBC;
+}
